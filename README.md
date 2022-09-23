@@ -21,7 +21,7 @@ Para hacer esto de forma más sencilla recomiendo enntrar a [ML Studio](https://
 Una vez dentro ingresa tu cuenta de Azure y crea una área de trabajo.
 Dale el nombre y la región que gustes. Si no tienes un grupo de recursos puedes crear uno ahí mismo.
 
-![](Pictures\Picture1.png)
+![](Pictures/Picture1.png)
 
 ------------------------------
 
@@ -31,7 +31,7 @@ Dale el nombre y la región que gustes. Si no tienes un grupo de recursos puedes
 - **Creación de una instancia de proceso**.
 Una vez que tu área de trabajo se encuentre creada dirígete al lado izquierdo y busca **Instancia de proceso**.
 
-![](Pictures\Picture2.png)
+![](Pictures/Picture2.png)
 
 Puedes seleccionar entre CPU y GPU, la diferencia entre estas es que la GPU hará el proceso mucho más rápido que la CPU y por ende es más cara.
 En mi caso usare CPU con una VM (Maquina Virtual) estandar (Estandar DS11_v2), ya que no necesito hacer procesos tan exigentes pero tu puedes seleccionar la que gustes.
@@ -41,11 +41,11 @@ En mi caso usare CPU con una VM (Maquina Virtual) estandar (Estandar DS11_v2), y
 La cración de este es porque esta dedicado a la creación de *Machine Learning* que es lo que bsucamos hacer.
 En el apartado de proceso encontraras el **cluster de proceso**, da clic en este y cra uno.
 
-![](Pictures\Picture3.png)
+![](Pictures/Picture3.png)
 
-![](Pictures\Picture3.png)
+![](Pictures/Picture4.png)
 
-![](Pictures\Picture5.png)
+![](Pictures/Picture5.png)
 
 - La VM que yo use es la estandar pero puedes más o menos potente de aucerdoa lo que necesites.
 - El mínimo de nodos en 0 es para que cuando no se este usando el cluster de proceso baje su uso hasta 0 nodos y evitar que te siga cobrando.
@@ -63,15 +63,15 @@ En el apartado de proceso encontraras el **cluster de proceso**, da clic en este
     - Elige la obción donde tengas almacenados los datos.
     - Si no poseés un dataset te proporcionaré el que yo utilicé para la demostración [Dataset](https://aka.ms/bike-rentals), para este conjunto de datos selecciona **de archivos web**.
 
-![](Pictures\Picture7.png)
+![](Pictures/Picture7.png)
 
 - 2. Una vez seleccionado el lugar de donde proporcionaras los datos, subelos y rellena los campos que te pida. Al finalizar dale clic en siguiente.
 
-![](Pictures\Picture8.png)
+![](Pictures/Picture8.png)
 
 - 3. En la siguiente pestaña deberas delimitar los parámetros de tu conjunto de datos. También te mostrará una vista previa ded dicho conjunto. Al terminar da clic en crear.
 
-![](Pictures\Picture9.png)
+![](Pictures/Picture9.png)
 
 **Nota**: Para el conjunto de datos que te proporcione solo elige como delimitador la coma y los encabezados solo en el primer archivo, lo demas dejalo en default.
 
@@ -84,7 +84,7 @@ Cuando la creación del recurso haya concluido, en el lateral izquierdo bsuca **
 
 - 1. Cuando se abra la pestaña vas a seleccionar el dataset que creaste anteriormente y le darás en siguiente.
 
-![](Pictures\Picture10.png)
+![](Pictures/Picture10.png)
 
 La columna de destino es lo que tu estas buscando predecir de tu datset, para mi caso estoy buscando obtener una predicción de cuantas rentas de bicis habrá a partir del resto de datos que contiene mi dataset.
 
@@ -96,13 +96,13 @@ Para mi modelo haré uso de **Regresión** porque es justo lo que necesito para 
 
     Si no sabes que modelo implementar en tu dataset te dejo aquí algo que te ayudara a escoger el mejor modelo para tu caso [Aquí](https://aka.ms/mlcheatsheet).
 
-![](Pictures\Picture11.png)
+![](Pictures/Picture11.png)
 
 Cuanto escojas tu modelo da clic en siguiente.
 
 - 4. Por ultimo puedes dejar los valores por default a menos que tengas otro conjunto de datos extra que quieras proporcionarle.
 
-![](Pictures\Picture12.png)
+![](Pictures/Picture12.png)
 
 Da clic en finalizar y espera a que se cree tu modelo. Esto puede tardar varios minutos dependiendo de la VM que hayas escogído y de la cantidad de nodos máximos que hayas puesto.
 
@@ -116,7 +116,7 @@ Este paso es opcional, con lo anterior ya tienes creado tu modelo de ML Automát
 - 1. Cuando este crado da clic en **Modelo** y posteriormente en **Implementar**.
         - Habilita la autenticación y en el entorno de proceso puedes usar kubernetes para que sea más sencillo el proceso.
 
-![](Pictures\Picture13.png)
+![](Pictures/Picture13.png)
 
 - 2. Al finalizar entra a puntos de conexión y espera a que se termine de crear, esto puede tardar varios minutos. Puedes darle refresh cada 2 min a la página para que veas si ya se implemento.
 
