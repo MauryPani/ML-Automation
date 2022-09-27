@@ -94,7 +94,7 @@ La columna de destino es lo que tu estas buscando predecir de tu datset, para mi
 
 Para mi modelo haré uso de **Regresión** porque es justo lo que necesito para predecir un valor a partir de un conjunto de datos.
 
-    Si no sabes que modelo implementar en tu dataset te dejo aquí algo que te ayudara a escoger el mejor modelo para tu caso [Aquí](https://aka.ms/mlcheatsheet).
+Si no sabes que modelo implementar en tu dataset te dejo aquí algo que te ayudara a escoger el mejor modelo para tu caso [Aquí](https://aka.ms/mlcheatsheet).
 
 ![](Pictures/Picture11.png)
 
